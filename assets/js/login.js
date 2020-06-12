@@ -23,10 +23,11 @@ $(function() {
         }
     })
 
+    var layer = layui.layer
+
     /**
      * 发送用户注册的请求
     */
-    var layer = layui.layer
     $('#form_reg').on('submit', function(e) {
         e.preventDefault();
         $.ajax({
