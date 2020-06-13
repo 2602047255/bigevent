@@ -17,9 +17,7 @@ $(function() {
         password:  [/^[\S]{6,12}$/, '密码长度必须是6~12位，且不能出现空格'],
         repassword: function(value) {
             var passwordValue = $('.register [name=password]').val()
-            if(value !== passwordValue) {
-                return '两次输入的密码不一致'
-            }
+            if(value !== passwordValue) return '两次输入的密码不一致'
         }
     })
 
