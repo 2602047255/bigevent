@@ -25,12 +25,10 @@ $(function() {
     */
     $('#file').on('change', function(e) {
         var fileList = e.target.files
-        if(fileList.length === 0) return layer.msg('请选择图片')
+        if(fileList.length === 0) return
 
-        // 获取用户选择的图片
-        var file = e.target.files[0]
         // 将图片转换成路径
-        var imgURL = URL.createObjectURL(file)
+        var imgURL = URL.createObjectURL(fileList[0])
         // 初始化裁剪区域
         $image
             .cropper('destroy')      // 销毁旧的裁剪区域

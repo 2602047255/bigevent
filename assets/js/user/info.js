@@ -12,7 +12,7 @@ $(function() {
     })
 
     /**
-     * 获取用户信息请求
+     * 获取用户信息的请求
     */
     function getUserInfo() {
         $.ajax({
@@ -36,7 +36,7 @@ $(function() {
     })
 
     /**
-     * 发送修改用户信息请求
+     * 发送修改用户信息的请求
     */
     $('.layui-form').on('submit', function(e) {
         e.preventDefault()

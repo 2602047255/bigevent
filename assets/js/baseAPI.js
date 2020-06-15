@@ -4,7 +4,7 @@
 */
 $.ajaxPrefilter(function(options) {
     // 设置请求路径
-    options.url = 'http://ajax.frontend.itheima.net' + options.url
+    options.url = 'http://www.liulongbin.top:3007' + options.url
 
     // 设置请求头
     if(options.url.indexOf('/my/') !== -1) {
